@@ -116,7 +116,7 @@ const usersApi = {
     userEmail: string;
     status: string;
   }): Promise<Response> => {
-    return ApiClient.getInstance().post<Response>("/updateUserStatus", body);
+    return ApiClient.getInstance().post<Response>("/user/status", body);
   },
 
   updateUserRole: (body: {
